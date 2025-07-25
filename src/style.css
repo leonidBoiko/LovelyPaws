@@ -1,0 +1,14 @@
+:root {
+  --bs-success:   #5F901D; /* ваш новий “успішний” колір */
+  --bs-success-rgb: 95, 144, 29; /* raw RGB triplet without rgba() */
+}
+
+/* Override success button colors */
+.btn-success {
+  --bs-btn-bg: var(--bs-success);
+  --bs-btn-border-color: var(--bs-success);
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
