@@ -1,5 +1,5 @@
 :root {
-  --bs-success:   #5F901D; /* ваш новий “успішний” колір */
+  --bs-success: #5f901d; /* ваш новий “успішний” колір */
   --bs-success-rgb: 95, 144, 29; /* raw RGB triplet without rgba() */
 }
 
@@ -10,5 +10,22 @@
 }
 
 .text-shadow {
-  text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.swiper {
+}
+
+.swiper-slide {
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
