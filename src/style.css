@@ -63,7 +63,7 @@ section[id] {
 }
 
 #care img {
-  max-width: 100px;
+  height: 100px;
 }
 
 #care img,
@@ -97,7 +97,7 @@ section[id] {
     width: initial;
   }
   #care img {
-    max-width: 144px;
+    height: 144px;
   }
   .logo {
     height: 50px;
