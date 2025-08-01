@@ -1,43 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css'
+import './style.css';
 import '../public/fonts/fonts.css';
+import * as bootstrap from 'bootstrap';
 
-// Swiper.js imports
+// Swiper imports
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Swiper from 'swiper';
-import { Pagination, Autoplay } from 'swiper/modules';
-
-// Encapsulate Swiper initialization
-function initializeSwiper() {
-  new Swiper('.mySwiper', {
-    modules: [Pagination, Autoplay],
-    spaceBetween: 30,
-    slidesPerView: 3,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
+import initCareModal from './care';
+import navigation from './navigation';
+import {includes, includeLogo} from './includes';
+import initializeSwiper from './swiper';
 
 // Initialize Swiper when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
-  const includeEls = document.querySelectorAll('[data-include]');
-  const includePromises = Array.from(includeEls).map(async el => {
-    const file = el.getAttribute('data-include');
-    const res = await fetch(file);
-    const html = await res.text();
-    el.innerHTML = html;
-  });
-
-  // Wait for all includes to finish
-  await Promise.all(includePromises);
-
+  // Load includes first
+  await includes();
+  await includeLogo();
+  // Initialize Care Modal
+  initCareModal();
+  // Navigation setup
+  navigation();
   // Initialize Swiper after includes are loaded
   initializeSwiper();
 });
