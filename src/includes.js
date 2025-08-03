@@ -1,5 +1,5 @@
 const logo = `
-<img src="/media/logo.svg" alt="Site Logo" class="logo" />`
+<img src="media/logo.svg" alt="Site Logo" class="logo" />`
 
 async function includeLogo() {
   const includeEls = document.querySelectorAll('[data-logo-include]');

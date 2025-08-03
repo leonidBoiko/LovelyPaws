@@ -55,7 +55,7 @@ section[id] {
 }
 
 .hero-image {
-  background-image: url('/media/main.jpg');
+  background-image: url('media/main.jpg');
   background-size: 50rem;
   background-position: right -5rem top 0;
   height: 90dvh;
