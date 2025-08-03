@@ -74,8 +74,10 @@ section[id] {
 }
 
 #about img {
-  max-width: 350px;
+  max-width: 380px;
+  max-height: 280px;
 }
+
 #about .col-lg-4 {
   overflow-x: auto;
 }
