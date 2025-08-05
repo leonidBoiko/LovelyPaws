@@ -94,7 +94,7 @@ section[id] {
 
 #care img:hover,
 #contacts img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .logo {
@@ -106,6 +106,10 @@ section[id] {
   max-height: none; 
   overflow: hidden;
   transition: max-height 0.5s ease-out;
+}
+
+.discount-button button {
+  border-color: var(--bs-btn-hover-color)
 }
 
 @media (min-width: 992px) { 
@@ -128,6 +132,9 @@ section[id] {
   .logo {
     height: 50px;
     width: 90px;
+  }
+  .discount-button button {
+    border-color: var(--bs-btn-border-color)
   }
  }
 

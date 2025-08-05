@@ -3,14 +3,22 @@ function navigation() {
   const navbarMenu = document.getElementById('nav-menu');
   const navBackground = document.getElementById('nav-bg');
   const links = navbarMenu.querySelectorAll('a');
-  const body = document.getElementsByTagName("body")[0];
+  const body = document.getElementsByTagName('body')[0];
+
+  function closeNavbar() {
+    navbarMenu.classList.add('d-none');
+    navBackground.classList.add('d-none');
+    body.classList.remove('overflow-hidden');
+  }
 
   links.forEach(link => {
-    link.addEventListener('click', event => {
-      navbarMenu.classList.add('d-none');
-      navBackground.classList.add('d-none');
-      body.classList.remove('overflow-hidden');
+    link.addEventListener('click', e => {
+      closeNavbar();
     });
+  });
+
+  navBackground.addEventListener('click', () => {
+    closeNavbar();
   });
 
   if (navbarToggler) {
@@ -21,9 +29,7 @@ function navigation() {
           navBackground.classList.remove('d-none');
           body.classList.add('overflow-hidden');
         } else {
-          navbarMenu.classList.add('d-none');
-          navBackground.classList.add('d-none');
-          body.classList.remove('overflow-hidden');
+          closeNavbar();
         }
       }
     });
