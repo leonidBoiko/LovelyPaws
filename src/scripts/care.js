@@ -1,5 +1,5 @@
 const careContent = {
-  upcycle: `<h2 class="mb-2 fs-1 fw-300 text-center">Upcycled Denim Dog Carrier</h2>
+  upcycle: `<h2 class="mb-2 fs-1 text-center">Upcycled Denim Dog Carrier</h2>
     <span class="fw-semibold">For the denim bag:</span>
     <ul>
       <li>Before washing the bag, take out the stiff base inside. It should stay dry to keep its shape.</li>
@@ -16,7 +16,7 @@ const careContent = {
       <li>Air dry the mattress completely in a well-ventilated area. Do not tumble dry or expose to direct heat sources.</li>
       <li>Avoid using bleach or ironing the fabric to preserve the softness and shape.</li>
     </ul>`,
-  sweater: `<h2 class="mb-2 fs-1 fw-300 text-center">Knitted Sweater</h2>
+  sweater: `<h2 class="mb-2 fs-1 text-center">Knitted Sweater</h2>
     <ul>
       <li>Spot clean small areas with a damp cloth.</li>
       <li>For deeper cleaning, hand wash in cold water with a mild detergent.</li>
@@ -24,7 +24,7 @@ const careContent = {
       <li>Lay flat to dry, away from direct heat or sunlight.</li>  
       <li>Avoid bleach and fabric softeners — they may damage the fibers.</li>
     </ul>`,
-  hoody: `<h2 class="mb-2 fs-1 fw-300 text-center">Hoody & Sweatshirts</h2>
+  hoody: `<h2 class="mb-2 fs-1 text-center">Hoody & Sweatshirts</h2>
     <ul>
       <li>Spot clean if possible.</li>
       <li>For full cleaning, hand wash or machine wash on a gentle cycle with cold water.</li>
@@ -32,7 +32,7 @@ const careContent = {
       <li>Air dry flat or hang dry. Avoid tumble drying to prevent shrinking.</li>  
       <li>Do not iron directly on the fleece side.</li>
     </ul>`,
-  vest: `<h2 class="mb-2 fs-1 fw-300 text-center">Vest</h2>
+  vest: `<h2 class="mb-2 fs-1 text-center">Vest</h2>
     <ul>
       <li>Wipe down with a damp cloth for light dirt.</li>
       <li>Hand wash in cold water for a deeper clean.</li>
@@ -40,7 +40,7 @@ const careContent = {
       <li>Hang to dry in a well-ventilated area.</li>  
       <li>Do not bleach, tumble dry, or iron.</li>
     </ul>`,
-  jacket: `<h2 class="mb-2 fs-1 fw-300 text-center">Jacket</h2>
+  jacket: `<h2 class="mb-2 fs-1 text-center">Jacket</h2>
     <span class="fw-semibold">Raincoat fabric:</span>
     <ul>
       <li>Wipe down with a damp cloth for light dirt.</li>
@@ -57,8 +57,8 @@ const careContent = {
       <li>Allow to air dry completely.</li>
       <li>Do not bleach, iron, or expose to direct heat.</li>
     </ul>`,
-  accessories: `<h2 class="mb-2 fs-1 fw-300 text-center">Accessories</h2>
-    <span class="fw-semibold fs-5 d-block fw-300">Bow Ties</span>
+  accessories: `<h2 class="mb-2 fs-1 text-center">Accessories</h2>
+    <span class="fw-semibold fs-5 d-block">Bow Ties</span>
     <span class="fw-semibold">Upcycled Denim:</span>
     <ul>
       <li>Spot clean gently with a damp cloth.</li>
