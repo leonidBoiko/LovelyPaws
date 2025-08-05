@@ -108,6 +108,10 @@ section[id] {
   border-color: var(--bs-btn-hover-color)
 }
 
+#privacyButton:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 992px) { 
   .discount-button {
     background-color: transparent !important;
